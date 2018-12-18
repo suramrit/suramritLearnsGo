@@ -44,7 +44,6 @@ func main() {
 	s := fmt.Sprintf("%b\n", x) // Binary as String
 	fmt.Println(s + `suramrit   
 					singh`) // `` for literal string
-
 	//exit flow from the program
 }
 func foo() {
