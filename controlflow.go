@@ -91,6 +91,21 @@ func main() {
 	case 's', 'j', hh: // can be expression, or expression list
 		fmt.Println("Found the match")
 	}
+
+	// for i := 0; i < 29; i++ {
+	// 	fmt.Println(1991 + i)
+	// }
+	// bd := 1991
+	// for {
+	// 	fmt.Println(bd)
+	// 	if bd == 2019 {
+	// 		break
+	// 	}
+	// 	bd++
+	// }
+	for i := 10; i < 100; i++ {
+		fmt.Println(i % 4)
+	}
 	//boolean simple examples
 	// true && false
 	// true || true
