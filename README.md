@@ -20,7 +20,7 @@ First I will be doing some builtin data structures in golang including:
 	+ array -- arrays.go
 	+ slices -- slice.go
 	+ maps -- map.go
-	+ struct 
+	+ struct -- struct.go
 
 I will look into
 
