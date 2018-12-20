@@ -41,8 +41,8 @@ func main() {
 		degree: "masters",
 	}
 
-	p1 := phrmagirl{ // if all the fields are different, can do without specifying them
-		j,
+	p1 := phrmagirl{ // If all the fields are different, can do without specifying them
+		j,			 // Not a good practice !!! 
 		318732,
 		"Leavenworth",
 	}
