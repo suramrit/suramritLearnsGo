@@ -2,20 +2,35 @@
 
 MIT License Copyright 2018 Suramrit
 
-Trying to get my hands dirty by doing some basic CS programs with Go. Lets see how it goes. 
+Trying to get my hands dirty by doing some basic CS programs with Go. 
 
-I'm starting with some basics like fmt package, TYPES, DECLARATIONS. 
+The code inspires itself heavily by following [Todd Mcleods course](https://www.udemy.com/learn-how-to-code) at udemy. He's a pretty cool instructor, highly recommended. 
 
-I will move onto doing some basic data structures implemented in golang including: 
-	array
-	linked lists - Singly / Doubly Linked 
-	FIFO Queue
-	LIFO Stack 
-	Binary Trees
-	Binary Heaps / Priority Queues
-	Hash Map/Sets and their types 
+So, lets begin. 
 
-Eventually I will also move to designing and making some web services written in golang. 
+I'm starting with some basics like fmt package, TYPES, DECLARATIONS.
+
+	+ hello.go
+	+ gotypes.go
+	+ controlflow.go
+
+Then move onto doing some builtin data structures in golang including: 
+(Sidebar: refer https://research.swtch.com/godata for good insights into builtin golang data-structures)
+
+	+ array -- arrays.go
+	+ slices -- slice.go
+	+ maps -- map.go 
+
+and move on to user defined data structures like
+
+	+ linked lists - Singly / Doubly Linked 
+	+ FIFO Queue
+	+ LIFO Stack 
+	+ Binary Trees
+	+ Binary Heaps / Priority Queues
+	+ Hash Map/Sets and their types 
+
+Eventually and hopefully, I will also be designing and making some web services written in golang. 
 
 Feel free to use this code to learn if you are a student, complying with the rules and regulations of your school and class. 
 
