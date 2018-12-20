@@ -14,14 +14,26 @@ I'm starting with some basics like fmt package, TYPES, DECLARATIONS.
 	+ gotypes.go
 	+ controlflow.go
 
-Then move onto doing some builtin data structures in golang including: 
+First I will be doing some builtin data structures in golang including: 
 (Sidebar: refer https://research.swtch.com/godata for good insights into builtin golang data-structures)
 
 	+ array -- arrays.go
 	+ slices -- slice.go
-	+ maps -- map.go 
+	+ maps -- map.go
+	+ struct 
 
-and move on to user defined data structures like
+I will look into
+
+	+ funtions
+	+ pointers
+
+Having a self-proclaimed proficiency in distributed systems, I will take a look at:
+
+	+ Concurrency 
+	+ Channels
+Hopefully this is when things will start to get exciting and I can actually see the power of golang firsthand
+
+With the still elusive technical interviews in mind, I will will work on Computer Science fundamentals for data structures and algorithms:
 
 	+ linked lists - Singly / Doubly Linked 
 	+ FIFO Queue
@@ -29,6 +41,11 @@ and move on to user defined data structures like
 	+ Binary Trees
 	+ Binary Heaps / Priority Queues
 	+ Hash Map/Sets and their types 
+	+ BFS / DFS
+	+ String Manipulations
+	+ Dynamic Programming 
+
+Mixing in some solutions to some LeetCode problems. 
 
 Eventually and hopefully, I will also be designing and making some web services written in golang. 
 
