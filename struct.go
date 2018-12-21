@@ -42,7 +42,7 @@ func main() {
 	}
 
 	p1 := phrmagirl{ // If all the fields are different, can do without specifying them
-		j,			 // Not a good practice !!! 
+		j, // Not a good practice !!!
 		318732,
 		"Leavenworth",
 	}
@@ -50,11 +50,14 @@ func main() {
 	fmt.Println(p1.person)
 	//Anon Structs -- used to avoid code pollution
 	anon_struct := struct {
-		name string
-		age  int
+		name    string
+		friends map[string]int
 	}{
 		name: "suramrit",
-		age:  22,
+		friends: map[string]int{
+			"jackie": 555,
+			"nick":   888,
+		},
 	}
-	fmt.Println(anon_struct.age)
+	fmt.Println(anon_struct.friends)
 }
