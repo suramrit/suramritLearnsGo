@@ -24,7 +24,9 @@ First I will be doing some builtin data structures in golang including:
 
 I will look into
 
-	+ funtions
+	+ funtions   -- functions.go
+	+ methods    -- methods.go
+	+ interfaces
 	+ pointers
 
 Having a self-proclaimed proficiency in distributed systems, I will take a look at:
@@ -35,6 +37,7 @@ Hopefully this is when things will start to get exciting and I can actually see 
 
 With the still elusive technical interviews in mind, I will will work on Computer Science fundamentals for data structures and algorithms:
 
+	+ sorting algos - quicksort.go, 
 	+ linked lists - Singly / Doubly Linked 
 	+ FIFO Queue
 	+ LIFO Stack 
