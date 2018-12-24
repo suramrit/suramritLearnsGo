@@ -37,7 +37,7 @@ func returner() string {
 
 //multiple return
 
-func multi(fn, ln string) (string, bool) {
+func multi(fn, ln string) (string, bool) { //multiple returns need to be in commas
 	a := fmt.Sprint(fn, " ", ln, ` said "hello!"`)
 	b := true
 	return a, b
