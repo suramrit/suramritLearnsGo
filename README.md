@@ -26,8 +26,8 @@ I will look into
 
 	+ funtions   -- functions.go
 	+ methods    -- methods.go
-	+ interfaces
-	+ pointers
+	+ interfaces -- interfaces.go
+	+ pointers   -- pointers.go
 
 Having a self-proclaimed proficiency in distributed systems, I will take a look at:
 
