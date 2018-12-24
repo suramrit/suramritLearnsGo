@@ -18,7 +18,7 @@ func main() {
 		fmt.Println("expression")
 	}
 	//In golang -- functions are first class citizens
-	v()
+	v() 
 
 	//First class -- so returning a function from a function
 	x := f_return()
