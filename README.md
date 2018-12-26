@@ -34,7 +34,8 @@ Now we'll take a step back and see usages of the golang standard library includi
 	+ JSON Marshalling and Unmarshalling -- json_marshal_in_golang.go
 	+ Writer Interface.-- writer_interface.go
 	+ sort Package - sorting_package.go
-	
+	+ bcrypt - brcypt_in_go.go
+
 Having a self-proclaimed proficiency in distributed systems, I will take a look at:
 
 	+ Concurrency 
