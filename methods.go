@@ -2,7 +2,8 @@ package main
 
 import "fmt"
 
-//Methods -- attached to structs
+//Methods -- attached to a type --- here using the example of struct
+// but it can be attached to any type
 
 type person struct {
 	first string
@@ -15,6 +16,8 @@ type student struct {
 	enroll int
 	loan   int
 }
+
+
 
 func (s *student) addloan(amt int) {
 	s.loan = amt
