@@ -29,6 +29,10 @@ I will look into
 	+ interfaces -- interfaces.go
 	+ pointers   -- pointers.go
 
+Now we'll take a step back and see usages of the golang standard library including: 
+
+	+ JSON Marshalling and Unmarshalling -- json_marshal_in_golang.go
+	+ Writer Interface.-- writer_interface.go
 Having a self-proclaimed proficiency in distributed systems, I will take a look at:
 
 	+ Concurrency 
@@ -48,7 +52,11 @@ With the still elusive technical interviews in mind, I will will work on Compute
 	+ String Manipulations
 	+ Dynamic Programming 
 
-Mixing in some solutions to some LeetCode problems. 
+Mixing in some solutions to common LeetCode problems. 
+
+	+ Monotonic Arrays(E) -- 
+	+
+	
 
 Eventually and hopefully, I will also be designing and making some web services written in golang. 
 
