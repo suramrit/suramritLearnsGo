@@ -19,7 +19,7 @@ func main() {
 	sum(s...) //pass slice as a simple list
 }
 
-//creating function
+// creating function
 // func (r reciever) identifier(parameters) (returns(s)) { .. }
 
 func foo() { //parameter
