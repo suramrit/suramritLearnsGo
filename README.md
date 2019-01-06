@@ -38,8 +38,8 @@ Now we'll take a step back and see usages of the golang standard library includi
 
 Having a self-proclaimed proficiency in distributed systems, I will take a look at:
 
-	+ Concurrency 
-	+ Channels
+	+ Concurrency -- concurrency.go
+	+ Channels -- channels.go, fan_in_channel.go, 
 Hopefully this is when things will start to get exciting and I can actually see the power of golang firsthand
 
 With the still elusive technical interviews in mind, I will will work on Computer Science fundamentals for data structures and algorithms:
