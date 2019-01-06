@@ -39,7 +39,8 @@ func main() {
 	// reciever(c)
 
 	// Ranging over a channel -- blocks until the channel is closed
-	
+	//No error when ranging over a closed channel
+	//Error/blocks when channel is left unclosed/open 
 	for v:= range c {
 		fmt.Println(v) // will result in deadlock until the channel is closed.
 		// To break such iteration channel needs to be closed explicitly. 
