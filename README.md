@@ -39,10 +39,13 @@ Now we'll take a step back and see usages of the golang standard library includi
 Having a self-proclaimed proficiency in distributed systems, I will take a look at:
 
 	+ Concurrency -- concurrency.go
-	+ Channels -- channels.go, fan_in_channel.go, 
-Hopefully this is when things will start to get exciting and I can actually see the power of golang firsthand
+	+ Channels -- channels.go, fan_in_channel.go, fan_out_channel.go 
 
-With the still elusive technical interviews in mind, I will will work on Computer Science fundamentals for data structures and algorithms:
+Hopefully this is when things will start to get exciting and I can actually see the power of golang firsthand. 
+ 
+Now that we are familiar with a lot of workings of golang. I will head off to an altogether new direction. However, to the keen learner, I recommend going over topics like error handling, documentation and testing in golang. I, however, would not be covering them in this repository. 
+
+So, with the still elusive technical interviews in mind, I will will work on Computer Science fundamentals for data structures and algorithms:
 
 	+ sorting algos - quicksort.go, 
 	+ linked lists - Singly / Doubly Linked 
@@ -57,11 +60,10 @@ With the still elusive technical interviews in mind, I will will work on Compute
 
 Mixing in some solutions to common LeetCode problems. 
 
-	+ Monotonic Arrays(E) -- 
+	+ 
 	+
 	
-
-Eventually and hopefully, I will also be designing and making some web services written in golang. 
+Eventually and hopefully, I will also be designing and making some web services written in golang.(Update: Considering the significant size this repo has taken, I will use a separate repo for this purpose, but the foundations for that would be laid here)
 
 Feel free to use this code to learn if you are a student, complying with the rules and regulations of your school and class. 
 
