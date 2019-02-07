@@ -5,6 +5,7 @@ import("fmt"
 	)
 
 //CONTEXT -- (Advanced Topic)
+
 // package to pass request scoped values, cancelation signals, and deadlines across APIboundaries to all sub go routines 
 // involved in. handling a single request 
 
@@ -26,6 +27,7 @@ func main() {
 	// The callers of gen need to cancel the context once
 	// they are done consuming generated integers not to leak
 	// the internal goroutine started by gen.
+	
 	gen := func(ctx context.Context) <-chan int {
 		dst := make(chan int)
 		n := 1
