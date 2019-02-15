@@ -38,36 +38,36 @@ Now we'll take a step back and see usages of the golang standard library includi
 
 Having a self-proclaimed proficiency in distributed systems, I will take a look at:
 
-	+ Concurrency -- concurrency.go
-	+ Channels -- channels.go, fan_in_channel.go, fan_out_channel.go 
+	+ Concurrency -- 
+		+ concurrency.go, 
+		+ websiteRacer: Use channels, go routines to race between 2 different urls for the fastest responses. No blocking, No Delays.
+	+ Channels -- channels.go, fan_in_channel.go, fan_out_channel.go
 
 Hopefully this is when things will start to get exciting and I can actually see the power of golang firsthand. 
  
 Now that we are familiar with a lot of workings of golang. I will head off to an altogether new direction. However, to the keen learner, I recommend going over topics like error handling, documentation and testing in golang. I, however, would not be covering them in this repository. 
 
-So, with the still elusive technical interviews in mind, I will will work on Computer Science fundamentals for data structures and algorithms:
+So, with the still elusive technical interviews in mind, I will will work on Computer Science fundamentals for data structures and algorithms: 
 
 	+ sorting algos - quicksort.go, 
-	+ linked lists - Singly / Doubly Linked 
-	+ FIFO Queue
-	+ LIFO Stack 
-	+ Binary Trees
-	+ Binary Heaps / Priority Queues
+	+ linked lists - Singly / Doubly Linked : ToDo
+	+ FIFO Queue : ToDo
+	+ LIFO Stack : ToDo
+	+ Binary Trees: ToDo
+	+ Binary Heaps / Priority Queues: ToDo
 	+ Hash Map/Sets and their types 
-	+ BFS / DFS
-	+ String Manipulations
-	+ Dynamic Programming 
+	+ BFS / DFS 
+		+	package readhtml - a package that  provides methods
+			to parses a standard HTML doc and used DFS to find 
+			link elements in the page
+	+ String Manipulations: ToDo
+	+ Dynamic Programming: ToDo
 
-Mixing in some solutions to common LeetCode problems. 
+and then probably mixing in some solutions to common LeetCode problems. 
 
-	+ 
-	+
-	
 Eventually and hopefully, I will also be designing and making some web services written in golang.(Update: Considering the significant size this repo has taken, I will use a separate repo for this purpose, but the foundations for that would be laid here)
 
-Feel free to use this code to learn if you are a student, complying with the rules and regulations of your school and class. 
-
-If you are a professional who is copying my code, dont know why you would do that but I wish you all the best! 
+Feel free to use this code to learn if you are new to golang, complying with the rules and regulations of your school and class or organization. 
 
 Feel free to @ me: linkedin.com/in/suramrit 
 
