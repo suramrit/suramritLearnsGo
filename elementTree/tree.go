@@ -9,7 +9,7 @@ import ("fmt";
 		"io";
 		"net/http";
 		"net/url";
-		"github.com/suramrit/surmaritLearnsGo/readhtml";
+		"../readhtml";
 		"strings";
 		"encoding/xml";
 		"os")
@@ -27,7 +27,7 @@ type urlset struct {
 }
 
 func main(){
-	urlFlag := flag.String("url","https://gophercises.com","url to build sitemap for")
+	urlFlag := flag.String("url","https://google.com","url to build sitemap for")
 	maxDepth := flag.Int("depth", 3, "max depth that the builder recirsively goes into")
 	flag.Parse()
 	// GET the webpage
