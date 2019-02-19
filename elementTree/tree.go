@@ -1,4 +1,8 @@
 package main
+//Working on https://gophercises.com/exercises/ ---- check out for small projects on golang! 
+
+//Disclaimer: The code was developed while following execises at https://gophercises.com/exercises/ and were solely developed from an educational perspective. 
+
 
 import ("fmt";
 		"flag";
