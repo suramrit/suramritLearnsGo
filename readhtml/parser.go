@@ -9,7 +9,6 @@ import ("encoding/json";
 
 
 type linkElem struct {
-	Link string `json:"link"`
 	Href string `json:"href"`
 	Text string `json:"text"`
 }
@@ -23,6 +22,24 @@ func Convert(r string) []byte{
 	jso, _:= json.MarshalIndent(res,"", "	")
 	os.Stdout.Write(jso)
 	return jso
+}
+
+func Parse_json(r io.Reader) ([]byte, error){
+	ret,err := Parse(r)
+	if err == nil{
+		fmt.Println("return from Parse OK")
+		jso, e:= json.MarshalIndent(ret,"", "	")
+		os.Stdout.Write(jso)
+		if e != nil {
+			fmt.Println("Marshal Error!")
+			return nil, e
+		} else {
+			return jso,nil
+		}
+	} else {
+		fmt.Println(err)
+		return nil, err
+	}
 }
 
 func Parse(r io.Reader) ([]linkElem, error){
@@ -84,7 +101,7 @@ func dfsHtml(n *html.Node, padding string){
 	if n.Type == html.ElementNode {
 		msg = "<"+msg+">"
 	}
-	fmt.Println(padding,msg)
+	//fmt.Println(padding,msg)
 	for c := n.FirstChild; c != nil; c = c.NextSibling {
 		dfsHtml(c, padding + "  ")
 	}
