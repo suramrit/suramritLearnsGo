@@ -9,7 +9,7 @@ import ("fmt";
 		"io";
 		"net/http";
 		"net/url";
-		"gophercises/readhtml";
+		"github.com/suramrit/surmaritLearnsGo/readhtml";
 		"strings";
 		"encoding/xml";
 		"os")
