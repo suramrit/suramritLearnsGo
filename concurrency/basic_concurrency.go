@@ -1,4 +1,4 @@
-package main
+package concurrency
 
 import (
 	"fmt"
@@ -16,52 +16,54 @@ import (
 //		- Adding concurrency can make things efficient, even if it requires more work to be done
 // 		- But parallelism is only achieved when the concurrent pieces are allowed to work at the same time
 
+// This program does the following --
 
-// This program does the following -- 
+// f1() and f2() concurrently print numbers upto 9 s
 
-// f1() and f2() concurrently print numbers upto 9 
-
-// in main() we call 1000 Separate go routines,
+// in BasicConcurrency() we call 1000 Separate go routines,
 // 		each routine updates the varaible counter
 // 		if no mutex used, race condition causes counter to be incorrect
-// 		mutex use makes sure theres no race condition 
-// we also use sync.WaitGroup to make sure that main() does not exit until all the go routines are completed.
-
+// 		mutex use makes sure theres no race condition
+// 		we also use sync.WaitGroup to make sure that BasicConcurrency() does not exit until all the go routines are completed.
 
 var wg sync.WaitGroup
 
-func main() {
+// BasicConcurrency inits 1000 separate goroutines that update the same variable which is under a mutex
+func BasicConcurrency() {
+	//Print Sys Config
 	fmt.Println("OS\t", runtime.GOOS)
 	fmt.Println("Arch\t", runtime.GOARCH)
 	fmt.Println("CPU\t", runtime.NumCPU())
+	//Print the number of current goroutine
 	fmt.Println("goroutine\t", runtime.NumGoroutine()) //1
 
+	// add 2 the the our count in the wait group
 	wg.Add(2)
+	//f1 will count till 9
 	go f1()
 	//or --
 	//var wg sync.WaitGroup
-	//go f1(&wg)                                    //Not printed -- launches a new go routine
+	//f2 will count till 9                             //Not printed -- launches a new go routine
 	go f2()                                            //Not printed -- not printed.. becuase the program exited... causing the goroutines to be incomplete....
 	fmt.Println("goroutine\t", runtime.NumGoroutine()) //3
 
 	//Synchronization primitives: mutex, waitgroups; sync package
-	//wg.Wait()
 
 	//race conditions and resolutions --
 
 	fmt.Println("CPU\t", runtime.NumCPU())
-	fmt.Println("goroutine\t", runtime.NumGoroutine()) //1
+	fmt.Println("goroutine\t", runtime.NumGoroutine()) //Can be anything between 1-3 depending on how f1 f2 run
 
 	counter := 0
 	const g = 1000
 	wg.Add(g)
-	//MUTEX!! 
+	//MUTEX!!
 	var mute sync.Mutex
-	//Creating Race Condition --- 
+	//Creating Race Condition ---
 	//Check when executing for race by: go run -race sample.go
 	for i := 0; i < g; i++ {
 		go func() {
-			//NEED MUTEX!!!! 
+			//NEED MUTEX!!!!
 			mute.Lock()
 			v := counter
 			runtime.Gosched()
@@ -71,7 +73,9 @@ func main() {
 			wg.Done()
 		}()
 	}
+	//Wait blocks until all go routines are complete
 	wg.Wait()
+
 	fmt.Println(" after execution goroutine\t", runtime.NumGoroutine()) //1
 
 	fmt.Println(counter)
